@@ -42,7 +42,7 @@ public class client {
             CSVrow.add("Fibonacci;"+st+";"+difference);
             logRow.add(res+" N:"+st+" Response-time:"+difference);
             //generateLogFile(res,st,difference);
-            webTarget = client.target("http://desktop-rq7tn9s:5557/").path("factorial").path(st);
+            webTarget = client.target("http://darpan-VirtualBox:5557/").path("factorial").path(st);
             start_time = System.nanoTime();
             invocationBuilder =  webTarget.request(MediaType.APPLICATION_JSON);
             response = invocationBuilder.get();
