@@ -30,7 +30,7 @@ public class client {
         String st;
         while ((st = br.readLine()) != null){
             Client client = ClientBuilder.newClient( new ClientConfig().register( LoggingFilter.class ) );
-            WebTarget webTarget = client.target("http://desktop-rq7tn9s:5557/").path("fibonacci").path(st);
+            WebTarget webTarget = client.target("http://darpan-VirtualBox:5557/").path("fibonacci").path(st);
             Invocation.Builder invocationBuilder =  webTarget.request(MediaType.APPLICATION_JSON);
             Response response = invocationBuilder.get();
             long start_time = System.nanoTime();
