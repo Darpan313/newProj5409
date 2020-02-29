@@ -13,7 +13,7 @@ Both the projects can be run using 'java -jar "build/libs/{name of jar file}"'
 Commands to build and install Mesos
 Follow: https://dzone.com/articles/getting-started-with-mesos-1
 
-##Command to run Mesos and Marathon in Ubuntu 18.04
+## Command to run Mesos and Marathon in Ubuntu 18.04
 
 systemctl start zookeeper
 
