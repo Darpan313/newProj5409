@@ -3,8 +3,8 @@
 This is REST-API that return fibonacci series/factorial of given number and also requestID, status.
 
 "marathon service" has API code for factorial and fibonacci which can be access:
-http://{host-addr}:5557/fibonacci/{number}
-http://{host-addr}:5557/factorial/{number}
+* http://{host-addr}:5557/fibonacci/{number}
+* http://{host-addr}:5557/factorial/{number}
 
 "simpleclient" is HttpClient, that generates 100 random integers store it in .txt file and hit above two APIs and store response time in .csv file
 
