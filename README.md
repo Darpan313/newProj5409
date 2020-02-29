@@ -7,22 +7,22 @@ This is REST-API that return fibonacci series/factorial of given number and also
 * http://{host-addr}:5557/factorial/{number}
 
 .json to deploy on marathon
-`{
-    "id": "/fibfactservice",
-    "cmd": "`https://raw.githubusercontent.com/Darpan313/newProj5409/master/marathonservice/build/libs/marathonservice-1.0-SNAPSHOT-all.jar && java -jar marathonservice-1.0-SNAPSHOT-all.jar.jar`",
-    "cpus": 1,
-    "mem": 1000,
-    "disk": 512,
-    "instances": 1,
-    "acceptedResourceRoles": [],
-    "portDefinitions": [
-      {
-        "port": 10000,
-        "name": "default",
-        "protocol": "tcp"
-      }
-    ]
- }`
+`{`
+    `"id": "/fibfactservice",`
+    `"cmd": "`https://raw.githubusercontent.com/Darpan313/newProj5409/master/marathonservice/build/libs/marathonservice-1.0-SNAPSHOT-all.jar && java -jar marathonservice-1.0-SNAPSHOT-all.jar.jar`",`
+    `"cpus": 1,`
+    `"mem": 1000,`
+    `"disk": 512,`
+    `"instances": 1,`
+    `"acceptedResourceRoles": [],`
+    `"portDefinitions": [`
+     `{`
+        `"port": 10000,`
+        `"name": "default",`
+        `"protocol": "tcp"`
+      `}`
+    `]`
+ `}`
 
 "simpleclient" is HttpClient, that generates 100 random integers store it in .txt file and hit above two APIs and store response time in .csv file
 
