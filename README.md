@@ -14,11 +14,20 @@ Commands to build and install Mesos
 Follow: https://dzone.com/articles/getting-started-with-mesos-1
 
 Command to run Mesos and Marathon in Ubuntu 18.04
+
+
 systemctl start zookeeper
+
 mesos-master --zk=zk://localhost:2181/mesos --work_dir=/tmp/mesos --quorum=1
+
 sudo mesos-slave --master=zk://localhost:2181/mesos --work_dir=/tmp/mesos
+
 sudo mesos-slave --master=zk://localhost:2181/mesos --work_dir=/tmp/mesos --port=5051
+
 export MESOS_NATIVE_JAVA_LIBRARY=/usr/local/lib/libmesos.so
+
 cd ~/Desktop/marathon-1.5.0-96-gf84298d/
+
 ./bin/marathon --master zk://localhost:2181/mesos --zk zk://localhost:2181/marathon
+
 
